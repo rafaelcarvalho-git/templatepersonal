@@ -12,26 +12,37 @@ header {
 
 header .header-text h5,
 .header-subtitle {
-    color: var(--color-quaternary);
-    font-family: Poppins, sans-serif;
+    color: white;
     font-size: 28px;
-    text-shadow: 0 0 0.1em #252525, 0 0 0.2em #252525;
+    font-family: Poppins, sans-serif;
+    text-shadow: 0 0 0.2em black, 0 0 0.2em var(--color-secondary);
 }
 
 .header-subtitle {
-    color: var(--color-quaternary);
-    font-size: 36px;    
-    text-shadow: 0 0 0.1em #252525, 0 0 0.2em #252525;
+    font-size: 36px;
+    color: var(--color-secondary);
+    text-shadow: 0 0 0.2em black, 0 0 0.2em var(--color-quaternary);
 }
 
 header .header-text h1 {
     font-size: 100px;
     line-height: 1.273;
-    color: white;
+    color: #252525;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 0.1em #252525, 0 0 0.2em #252525;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em var(--color-secondary);
+}
+
+header .header-text h1::after {
+    position: absolute;
+    content: "";
+    left: 3px;
+    width: 99%;
+    height: 25px;
+    background-color: var(--color-secondary);
+    bottom: 21px;
+    z-index: -1;
 }
 
 .header-icons {
