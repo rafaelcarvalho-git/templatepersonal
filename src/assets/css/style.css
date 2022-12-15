@@ -5,7 +5,7 @@
   --color-primary: #4438b7;
   --color-secondary: #7a73cc;
   --color-tertiary: #5338b7;
-  --color-quaternary:  #aca5f3;
+  --color-quaternary: #aca5f3;
 }
 
 body {
@@ -40,7 +40,7 @@ p {
   line-height: 1.8;
   font-size: 16px;
   margin-bottom: 0px;
-  color: rgb(94, 94, 94);
+  color: rgb(85, 85, 85);
   font-weight: 300;
 }
 
@@ -90,7 +90,7 @@ button:focus,
   color: rgb(255, 255, 255) !important;
 }
 
-.btn_2 {
+.btn-2 {
   display: inline-block;
   padding: 18px 40px;
   font-size: 15px;
@@ -101,7 +101,7 @@ button:focus,
   letter-spacing: 1.5px;
 }
 
-.btn_2:hover {
+.btn-2:hover {
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   color: rgb(255, 255, 255) !important;

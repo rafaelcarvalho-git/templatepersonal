@@ -15,18 +15,22 @@ function App() {
     setLoading(true);
   }, 1000);
 
-  if (loading === false) {
-    return <ReactLoading className="loader mx-auto my-auto" type={"spin"} color={"#4438b7"} height={100} width={100} />
-  } else {
-    return (
-      <>
-        <Header />
-        <About />
-        <Contact />
-        <Footer />
-      </>
-    );
-  }
+
+  return (
+    <>
+      {loading === false
+        ? <ReactLoading className="loader mx-auto my-auto" type={"spin"} color={"#4438b7"} height={100} width={100} />
+        :
+        <>
+          <Header />
+          <About />
+          <Contact />
+          <Footer />
+        </>
+      }
+    </>
+  );
+
 }
 
 export default App;

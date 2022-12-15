@@ -4,7 +4,6 @@ header {
     align-items: center;
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #a5d1fdc9 0%, #8782ceda 100%);
-    background: url('./header-bg-1.jpg');
     background: url('bg2.png');
     background-position: center;
     background-attachment: fixed;
@@ -13,14 +12,16 @@ header {
 
 header .header-text h5,
 .header-subtitle {
-    color: var(--color-secondary);
+    color: white;
     font-size: 28px;
     font-family: Poppins, sans-serif;
+    text-shadow: 0 0 0.2em black, 0 0 0.2em var(--color-secondary);
 }
 
 .header-subtitle {
     font-size: 36px;
     color: var(--color-secondary);
+    text-shadow: 0 0 0.2em black, 0 0 0.2em var(--color-quaternary);
 }
 
 header .header-text h1 {
@@ -30,6 +31,7 @@ header .header-text h1 {
     text-transform: uppercase;
     position: relative;
     z-index: 1;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em var(--color-secondary);
 }
 
 @media (max-width: 991px) {
@@ -130,6 +132,7 @@ header .header-text h1 span {
     font-size: 32px;
     color: white;
     transition: all 0.2s ease 0s;
+    text-shadow: 0 0 0.2em black, 0 0 0.2em red;
 }
 
 .header-icon:hover {
