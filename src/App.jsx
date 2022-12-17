@@ -1,12 +1,13 @@
-import './App.css';
-import './assets/css/bootstrap.min.css';
-import './assets/css/style.css';
+import './App.css'
+import './assets/css/bootstrap.min.css'
+import './assets/css/style.css'
 import React, { useState } from 'react'
 import ReactLoading from 'react-loading'
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import Gallery from './components/Gallery/Gallery'
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <>
           <Header />
           <About />
+          <Gallery />
           <Contact />
           <Footer />
         </>
