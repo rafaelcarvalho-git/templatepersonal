@@ -44,6 +44,10 @@ p {
   font-weight: 300;
 }
 
+.text-shadow {
+  text-shadow: 0 0 1em #252525, 0 0 1em #252525;
+}
+
 h3 {
   font-size: 24px;
   line-height: 25px;
