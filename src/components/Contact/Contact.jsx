@@ -7,7 +7,7 @@ function Contact() {
         <section className="text-center py-2 my-5">
             <div className="container my-5">
                 <div className="row align-items-center">
-                    <Fade left>
+                    <Fade>
                         <a href="tel:+88988573004" className="contact-item-hover col-lg-4 mb-5 mb-lg-0 text-decoration-none">
                             <BsTelephone className="contact-icon mb-3" />
                             <h3>(88) 98812-3456</h3>
@@ -21,10 +21,10 @@ function Contact() {
                             <p>Ceará, Brasil</p>
                         </a>
                     </Fade>
-                    <Fade right>
+                    <Fade>
                         <a href="mailto:rafaskyplay@gmail.com" className="contact-item-hover col-lg-4 mb-5 mb-lg-0 text-decoration-none">
                             <BsEnvelope className="contact-icon mb-3" />
-                            <h3 className="text-lowercase">personal@gmail.com</h3>
+                            <h3>personal@gmail.com</h3>
                             <p>Aguardo a sua mensagem</p>
                         </a>
                     </Fade>

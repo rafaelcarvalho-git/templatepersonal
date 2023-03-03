@@ -1,14 +1,16 @@
+import * as S from './styles'
 import './Header.css'
 import Zoom from 'react-reveal/Zoom'
 import Typed from 'react-typed'
 import { BsWhatsapp, BsInstagram, BsEnvelope, BsFacebook } from "react-icons/bs"
+import { Container } from '../../global'
 
 function Header() {
     return (
-        <header>
+        <S.Header>
             <Zoom>
-                <div className="container">
-                    <div className="header-text text-center mt-4">
+                <Container>
+                    <S.HeaderText className="header-text text-center mt-4">
                         <h5>Olá, eu sou</h5>
                         <h1 className="header-under mx-auto text-shadow">RAFAEL CARVALHO</h1>
                         <h2 className="header-subtitle mt-3 mb-5 text-shadow"><Typed strings={[
@@ -26,10 +28,10 @@ function Header() {
                             <a target="_blank" rel="noreferrer noopener" href="mailto:rafaskyplay@gmail.com" className="header-icon mx-auto"><BsFacebook /></a>
                         </div>
                         <a href="#" className="btn-1 btn-float">Agende sua aula experimental</a>
-                    </div>
-                </div>
+                    </S.HeaderText>
+                </Container>
             </Zoom>
-        </header>
+        </S.Header>
     );
 }
 
