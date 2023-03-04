@@ -1,30 +1,32 @@
-import './Gallery.css'
+import * as S from './styles'
 import Fade from 'react-reveal/Fade'
+import { Row } from '../../global'
+import { img1, img2, img3, img4, img5 } from './styles'
 
 function Gallery() {
     return (
         <section>
             <Fade>
-                <div className="gallery container py-5">
-                    <h2 className="text-center mt-4 mb-3 gallery-under mx-auto">Galeria</h2>
-                    <div class="row">
-                        <div class="mx-auto col-md-4">
-                            <div class="gallery-image img-1 rounded"></div>
-                        </div>
-                        <div class="mx-auto col-md-4">
-                            <div class="gallery-image img-2 rounded"></div>
-                        </div>
-                        <div class="mx-auto col-md-4">
-                            <div class="gallery-image img-3 rounded"></div>
-                        </div>
-                        <div class="mx-auto col-md-6">
-                            <div class="gallery-image img-4 rounded"></div>
-                        </div>
-                        <div class="mx-auto col-md-6">
-                            <div class="gallery-image img-5 rounded"></div>
-                        </div>
-                    </div>
-                </div>
+                <S.GalleryContainer>
+                    <S.GalleryTitle>Galeria</S.GalleryTitle>
+                    <Row>
+                        <S.GalleryImageCol4>
+                            <S.GalleryImage style={{ background: `url(${img1})` }}></S.GalleryImage>
+                        </S.GalleryImageCol4>
+                        <S.GalleryImageCol4>
+                            <S.GalleryImage style={{ backgroundImage: `url(${img2})` }}></S.GalleryImage>
+                        </S.GalleryImageCol4>
+                        <S.GalleryImageCol4>
+                            <S.GalleryImage style={{ backgroundImage: `url(${img3})` }}></S.GalleryImage>
+                        </S.GalleryImageCol4>
+                        <S.GalleryImageCol6>
+                            <S.GalleryImage style={{ backgroundImage: `url(${img4})` }}></S.GalleryImage>
+                        </S.GalleryImageCol6>
+                        <S.GalleryImageCol6>
+                            <S.GalleryImage style={{ backgroundImage: `url(${img5})` }}></S.GalleryImage>
+                        </S.GalleryImageCol6>
+                    </Row>
+                </S.GalleryContainer>
             </Fade>
         </section>
     );
