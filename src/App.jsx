@@ -1,13 +1,11 @@
 import './assets/css/bootstrap.min.css'
 import React, { useState } from 'react'
-import ReactLoading from 'react-loading'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Gallery from './components/Gallery/Gallery'
-
-import { GlobalStyle, Container } from './global'
+import { GlobalStyle, Loader, primaryColor } from './global'
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -21,7 +19,7 @@ function App() {
     <>
       <GlobalStyle />
       {loading === false
-        ? <ReactLoading className="loader mx-auto my-auto" type={"spin"} color={"#4438b7"} height={100} width={100} />
+        ? <Loader type={'spin'} color={primaryColor} height={95} width={95} />
         :
         <>
           <Header />
